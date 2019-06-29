@@ -1,23 +1,12 @@
 
-def helper_function(grid, search_grid):
-
-    col = len(search_grid)
-    rows = len(search_grid[0])
-
-    check = is_present(grid[rows][col],search_grid)
-    return check
-
 
 def is_present(grid, search_grid):
 
    for i in range(len(grid)):
-       for j in range(len(grid[i])):
-        if (grid[i][j] == search_grid[i][j]):
-            if(grid[i][j+1] == search_grid[i][j+1]):
-                if (grid[i+1][j] == search_grid[i+1][j]):
-                    if(grid[i+1][j+1] == search_grid[i+1][j+1]):
-                        return True
-        return False
+       for j in range(len(grid)):
+        if (grid[i] == search_grid[i])
+
+        
 
 
 if __name__ == '__main__':
